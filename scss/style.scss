@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,300;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
+$f:'Lato', sans-serif;
+$f1:'Source Sans Pro', sans-serif;
+body
+{
+    font-family: 'Lato', sans-serif;
+//     font-family: 'Source Sans Pro', sans-serif;    
+// 
+}
+.bg1
+{
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    &-content
+    {
+        padding: 20% 3%;
+        color: #fff;
+        max-width: 500px;
+        text-shadow:2px 5px 3px rgba($color: #000000, $alpha: 0.3);
+        h1
+        {
+          font-size: 55px;
+          font-weight: 700;
+          font-family: $f;
+        }
+    }
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    font-size: 14.8px;
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+   color: red;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link
+{
+    color: red;
+}
+.navbar-light .navbar-brand
+{
+    color: #fff;
+    font-family: $f1;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 5px 3px rgba($color: #000000, $alpha: 0.3);
+}
+
+.features
+{
+    padding: 50px o;
+    &__box
+    {
+        background:#f8f9fa;
+        padding: 20px;
+        box-shadow: rgba($color: #000000, $alpha: 0.5);
+    }
+}
